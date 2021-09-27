@@ -1,0 +1,13 @@
+EXO 1:
+
+Modélisation du problème sous forme de réseau de contrainte :
+
+Variables: X1,1...Xn,n
+
+Domaine : {1,...,n}
+
+contraintes : - sumLines = 1
+              - sumColumns = 1
+              - sumDiaogonaleSuperieure <= 1
+              - sumDiagonaleInferieure <= 1
+    
