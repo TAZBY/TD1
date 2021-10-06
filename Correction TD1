@@ -6,8 +6,40 @@ Variables: X1,1...Xn,n
 
 Domaine : {1,...,n}
 
-contraintes : - sumLines = 1
+contraintes : 
+              - allDifferent(lines)
+              - sumLines = 1
               - sumColumns = 1
               - sumDiaogonaleSuperieure <= 1
               - sumDiagonaleInferieure <= 1
     
+EXO 2:
+
+
+Modélisation du problème sous forme de réseau de contrainte :
+
+Variables : L1,...L9
+
+Domaine : {1,..9}
+
+contraintes :
+              - allDifferent(lines)
+              - operation : addition(+)
+              - terme1Size = terme2Size = 4 (lettres) //(terme1 : SEND = 4 & terme2 : MORE = 4)
+              - sumSize = termesSize + 1 //(MONEY : size = 5 lettres)
+              - l1-l4(sum) € terme1 & terme2 // les lettres de 1-4 de la somme(MONE) sont des lettres qui se trouvent dans les terme1 et Terme2
+
+
+EXO 3:
+
+soit la longueur de la regle = 6
+
+Variables : P1,...,P6
+
+Domaine : {1,..,6}
+
+contraintes :
+              - allDifferent(lines)
+              - Pi < Pi+1
+              - sizePi < sizePi+1
+            
