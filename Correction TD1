@@ -42,4 +42,19 @@ contraintes :
               - allDifferent(lines)
               - Pi < Pi+1
               - sizePi < sizePi+1
+              
+EXO 4 :
+
+Soit 5 maisons et 5 caracteristiques associées différentes, comme indiqué dans l'énoncé.
+Et soit pour cette modélisation une maison= une ligne et les differentes caractéristiquesassociées des colonnes.
+
+
+Variables : X1,1,..X5,5
+
+Domaine : {1,...,5}
+
+contraintes : 
+              -allDifferent(lines)
+              -allDifferent(columns)
+              
             
